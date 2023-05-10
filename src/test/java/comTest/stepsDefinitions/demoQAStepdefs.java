@@ -23,7 +23,7 @@ public class demoQAStepdefs {
     JavascriptExecutor js = (JavascriptExecutor) driver;
     public void waitForElement(String locator) {
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator)));
-        //essai commit intellij2
+        //essai commit intellij3
 
     }
 

@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dee0c360-1a21-4647-a273-b28291cac4dc" name="Changes" comment="Fonctionnement du register sous demowebshop">
-      <change afterPath="$PROJECT_DIR$/src/test/java/comTest/stepsDefinitions/demoQAStepdefs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/demoQa.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/comTest/RunnerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/comTest/RunnerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/comTest/stepsDefinitions/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/comTest/stepsDefinitions/Hooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/comTest/stepsDefinitions/TricentisStepdefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/comTest/stepsDefinitions/TricentisStepdefs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/test.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/test.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/comTest/stepsDefinitions/demoQAStepdefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/comTest/stepsDefinitions/demoQAStepdefs.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
