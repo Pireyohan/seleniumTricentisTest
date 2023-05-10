@@ -39,11 +39,9 @@ public class TricentisStepdefs {
 
     }
 
-    @When(": il saisit  son firstName sur le device {string}")
+    @When(": il saisit son firstName sur le device {string}")
     public void ilSaisitSonFirstNameSurLeDevice(String firstName) throws InterruptedException {
         driver.findElement(By.xpath("//input[@id='FirstName']")).sendKeys(firstName);
-
-
     }
 
     @And(": il saisit son LastName sur le device {string}")

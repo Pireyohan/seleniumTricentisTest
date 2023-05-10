@@ -19,47 +19,48 @@ import java.net.URL;
 
 public class Hooks {
 
-    public static AppiumDriver driver;
-
+    public static ChromeDriver driver;
     @Before
-    public void setUp() throws MalformedURLException {
-
-        DesiredCapabilities capabilities = new DesiredCapabilities();
+    public void beforeScenario() {
         WebDriverManager.chromedriver().setup();
-        capabilities.setCapability("platformName", "Android");
-        capabilities.setCapability("appium:platformVersion", "12.0");
-        capabilities.setCapability("appium:deviceName", "emulator-5554");
-        // capabilities.setCapability(MobileCapabilityType.APP, "/path/to/your/app.apk");
-        capabilities.setCapability("appium:browserName", "chrome");
-        //capabilities.setCapability("unicodeKeyboard", true);
-        //capabilities.setCapability("resetKeyboard", true);
-
-        URL remoteUrl = new URL("http://127.0.0.1:4723/wd/hub");
-        driver = new AppiumDriver(remoteUrl, capabilities);
-
-
+        driver = new ChromeDriver();
+        ChromeOptions options= new ChromeOptions();
+        options.addArguments("--remote-allow-origins=*");
+        driver=new ChromeDriver(options);
+        driver.manage().window().maximize();
     }
+
     @After
-    public void tearDown() {
+    public void afterScenario() {
         if (driver != null)
             driver.quit();
     }
+
+
+//    @Before
+//    public void setUp() throws MalformedURLException {
 //
-    //    @Before
-//    public void beforeScenario() {
+//        DesiredCapabilities capabilities = new DesiredCapabilities();
 //        WebDriverManager.chromedriver().setup();
-//        driver = new ChromeDriver();
-////        ChromeOptions options= new ChromeOptions();
-////        options.addArguments("--remote-allow-origins=*");
-////        driver=new ChromeDriver(options);
-//        driver.manage().window().maximize();
-//    }
+//        capabilities.setCapability("platformName", "Android");
+//        capabilities.setCapability("appium:platformVersion", "12.0");
+//        capabilities.setCapability("appium:deviceName", "emulator-5554");
+//        // capabilities.setCapability(MobileCapabilityType.APP, "/path/to/your/app.apk");
+//        capabilities.setCapability("appium:browserName", "chrome");
+//        //capabilities.setCapability("unicodeKeyboard", true);
+//        //capabilities.setCapability("resetKeyboard", true);
 //
+//        URL remoteUrl = new URL("http://127.0.0.1:4723/wd/hub");
+//        driver = new AppiumDriver(remoteUrl, capabilities);
+//
+//
+//    }
 //    @After
-//    public void afterScenario() {
+//    public void tearDown() {
 //        if (driver != null)
 //            driver.quit();
 //    }
+//
 
 //    @Test
 //    public void testExample() {
