@@ -10,3 +10,9 @@ Feature: test
     And : il saisit le same Password sur le device "testtest"
     And : il clique sur le bouton register
     Then :le message "Your registration completed" s'affiche avec le bouton continue en dessous
+
+  @seleniumdev2
+    Scenario: Etant connecté je check que les éléments de la liste de gauche est apparente
+      Given : Un client sur le site démo "https://demowebshop.tricentis.com/"
+      Then : Je veux voir toutes les catégories
+
